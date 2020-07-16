@@ -18,6 +18,20 @@
 
 
 		</style>
+
+		<script type="text/javascript">
+			function myFunction() {
+					var x = document.getElementById("myInput")
+					x.select()
+					x.focus()
+					if (x == "ImGoingToGiveAkashAJob") {
+						var y = document.getElementById("secretVid")
+					} else {
+						document.getElementById("secretVid").style.display = "";
+					}
+			}
+		</script>
+
 	</head>
 	<body class="section has-background-light">
 
@@ -35,9 +49,8 @@
 		</section>
 		<!-- /.hero -->
 
-		<nav class="center breadcrumb is-medium" aria-label="breadcrumbs">
+		<nav class="breadcrumb is-centered is-large" aria-label="breadcrumbs">
 					<ul>
-
 							<li>
 								<a href="./index.html">
 									<span class="icon is-xsmall">
@@ -72,9 +85,42 @@
 							</li>
 					</ul>
 				</nav>
-				<div class="center">
-					Theres gonna be some hilarious things here soon i pinky promise.
-				</div>
+				<!-- .section -->
+						<section class="section has-background-light">
+							<div class="container">
+								<div class="center columns">
+									<div class="column">
+										<article class="media notification is-light">
+											<figure class="media-content has-text-centered">
+													<p class="is-size-2">Heres one of my sets</p>
+												<iframe class="has-ratio" src="https://drive.google.com/file/d/13my2ZfYulgl1sS83EMDpzmqLnocfEBi-/preview" frameborder="0" width="640" height="480" allowfullscreen></iframe>
+											</figure>
+										</article>
+									</div>
+								</div>
+							</div>
 
+							<div class="has-text-centered">
+								<p>If you'd like to see some jokes that are a little more <span style="color:blue">blue</span> <br>
+										enter the secret password down below.
+							</div>
+							<div class="has-text-centered">
+								Password:  <input type="password" id="myInput">
+								<button type="button" onclick="myFunction()">Enter</button>
+							</div>
+
+							<div id="secretVid" class="container" style="display:none">
+								<div class="center columns">
+									<div class="column">
+										<article class="media notification is-light">
+											<figure class="media-content has-text-centered">
+													<p class="is-size-2">Heres a <i>risk-ay</i> clip</p>
+												<iframe class ="has-ratio"src="https://drive.google.com/file/d/1hb3LEsnF6NOCo0M8J5LmdBSon21F2IMx/preview" frameborder="0" width="640" height="480" allowfullscreen></iframe>
+											</figure>
+										</article>
+									</div>
+								</div>
+							</div>
+						</section>
       </body>
       </html>
