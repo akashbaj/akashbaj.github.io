@@ -24,8 +24,14 @@
   		justify-content: center;
 		}
 
-
 		</style>
+
+		<script type="text/javascript">
+			function myMobileFunction() {
+				document.getElementById("mobileDisplay").style.display = "";
+			}
+		</script>
+
 	</head>
 	<body class="section has-background-light">
 
@@ -127,7 +133,7 @@
 		<!-- /.section -->
 
 		<!-- .section -->
-		<section class="section">
+		<section class="section is-hidden-mobile">
 			<div class="container">
 				<div class="columns">
 						<div class="column">
@@ -188,6 +194,47 @@
 		</div>
 		</section>
 		<!-- /.section -->
+
+
+		<section class="section is-hidden-tablet">
+			<div class="center buttons">
+				<button type="button" class="button is-large is-fullwidth is-info is-light" onclick="myMobileFunction()">About Me</button>
+			</div>
+
+			<div class="container">
+				<div id="mobileDisplay" class="columns" style="display:none">
+					<div class="column">
+					<div class="notification is-info">
+							<p class="is-size-5">
+								<span class="icon is-large">
+									<i class="fas fa-angle-double-down" aria-hidden="true"></i>
+								</span>
+								<br>
+								I am interested in how technology can be used to improve on current practices in other industries.
+								I am particularly interested in the crossroads of finance and tehcnology, FinTech. I am interesed in seeing
+								how better software tools, artificial intelligence, blockchain, and other technology products can help improve the
+								way we do business.
+								<br>
+								<span class="icon is-large">
+									<i class="fas fa-laptop" aria-hidden="true"></i>
+								</span>
+								<br>
+								When it comes to technology, I have worked as a front-end web developer for The University of Michigan Mind, Machine, Mathematics
+								during my sophmore year. Additionally during the summer of 2020 I interned as a front-end web developer for a telemedicine start-up Cress Health.
+								<br>
+								<span class="icon is-large">
+									<i class="fas fa-dollar-sign" aria-hidden="true"></i>
+								</span>
+								<br>
+								In trying to achieve this goal I have interened at both financial firms and tech companies. In regards to finance,
+								I have interened at Houlihan Lokey (New York City), for the summers of 2019-2020. First as a Summer Valuation Analyst
+								and later as a Summer Data Analyst.
+							</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 
