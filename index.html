@@ -28,7 +28,13 @@
 
 		<script type="text/javascript">
 			function myMobileFunction() {
-				document.getElementById("mobileDisplay").style.display = "";
+				var x = document.getElementById("mobileDisplay")
+				if (x.style.display === "none") {
+					x.style.display = "";
+				} else {
+					x.style.display = "none";
+				}
+				//document.getElementById("mobileDisplay").style.display = "";
 			}
 		</script>
 
@@ -133,7 +139,7 @@
 		<!-- /.section -->
 
 		<!-- .section -->
-		<section class="section is-hidden-mobile">
+		<section class="section is-hidden-touch">
 			<div class="container">
 				<div class="columns">
 						<div class="column">
@@ -196,7 +202,7 @@
 		<!-- /.section -->
 
 
-		<section class="section is-hidden-tablet">
+		<section class="section is-hidden-desktop">
 			<div class="center buttons">
 				<button type="button" class="button is-large is-fullwidth is-info is-light" onclick="myMobileFunction()">About Me</button>
 			</div>
