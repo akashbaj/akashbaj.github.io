@@ -16,8 +16,20 @@
 			align-items: center;
 		}
 
-
 		</style>
+
+		<script type="text/javascript">
+			function myDropDownFunction() {
+				var x = document.getElementById("dropdown-menu")
+				if (x.style.display === "none") {
+					x.style.display = "";
+				} else {
+					x.style.display = "none";
+				}
+				//document.getElementById("mobileDisplay").style.display = "";
+			}
+		</script>
+
 	</head>
 	<body class="section has-background-light">
 
@@ -72,8 +84,115 @@
 					</ul>
 				</nav>
 
+
+				<div class="content has-text-centered">
+					<p>
+					 	Here you can find just a few of the many exciting coding project's I've been apart of both inside and outside the classroom
+					</p>
+				</div>
+
 				<div class="center">
-					I swear I've coded before. I'll Tell you about it soon!
-			  </div>
+					<div class="dropdown is-active">
+						<div class="dropdown-trigger">
+							<button class="button" aria-haspopup="true" aria-controls="dropdown-menu" onclick="myDropDownFunction()">
+								<span>Relevent CS Courses</span>
+								<span class="icon is-small">
+									<i class="fas fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</button>
+						</div>
+						<div class="dropdown-menu" id="dropdown-menu" role="menu" style="display:none">
+							<div class="dropdown-content">
+								<div class="dropdown-item">
+									<p>EECS 183: Elementary Programming Concepts</p>
+								</div>
+								<hr class="dropdown-divider">
+								<div class="dropdown-item">
+									<p>EECS 280: Programming and Intro to Data Sctructures</p>
+								</div>
+								<hr class="dropdown-divider">
+								<div class="dropdown-item">
+									<p>EECS 203: Discremte Mathematics</p>
+								</div>
+								<hr class="dropdown-divider">
+								<div class="dropdown-item">
+									<p>EECS 281: Data Structues and Algorithms</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+				<section class="section ">
+					<div class="container">
+						<div class="columns">
+							<div class="column">
+								<div class="notification is-info is-light">
+									<h1 class="title is-size-4 center">Machine Learning With Piazza</h1>
+									<p class="is-size-5">
+										This project was part of my EECS 280 coursework. Using the NLP Bag of Words model, this
+										program created a classifier to determine which thread and/or subject-matter posts on the educational
+										platform Piazza would fall under. The classifer created was a simplified version of the
+										“Multi-Variate Bernoulli Naive Bayes Classifier”.
+									</p>
+								</div>
+							</div>
+
+							<div class="column">
+								<div class="notification is-warning is-light">
+									<h1 class="title is-size-4 center">SillyQL</h1>
+									<p class="is-size-5">
+										This project was part of my EECS 281 coursework. By creating a simpler version of SQL,
+ 										this program worked to solidify understanding of data structures and tune optimization skills.
+ 										SillyQL was able to CREATE, INSERT, JOIN, REMOVE, PRINT, and GENERATE INDEX.
+ 										Through the generate index function, this program explores hash tables. See github for more information.
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section class="section ">
+					<div class="container">
+						<div class="columns">
+							<div class="column">
+								<div class="notification is-warning is-light">
+									<h1 class="title is-size-4 center">InfoGeo Web</h1>
+									<p class="is-size-5">
+										This project was part of my sophomore Undergradute Research Opporutnity Program (UROP). I worked in the
+										M3 Lab at U of M one academic year, in which i designed and created the front-end
+										for the website InfoGeo (not yet deployed), a website that will host the Lab's reserach and other educational resources
+										for those interested in learning more about the subject of Information Geometry
+									</p>
+								</div>
+							</div>
+
+							<div class="column">
+								<div class="notification is-info is-light">
+									<h1 class="title is-size-4 center">Drone Delivery</h1>
+									<p class="is-size-5">
+										This project was part of my EECS 281 coursework. In order to explore different algorithms,
+										this program takes in a delivery route for remote controlled drones to deliver around campus
+										and returns an optimized delivery route for the drone depending on that drone's specifications.
+										This program uses minimum spanning trees, a knapsack algorithm, and a traveling salesperson algorithm.
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<footer class="footer has-background-light">
+					<div class="content has-text-centered">
+						<p>
+							Dicalimer: As per the University of Michigan's College of Engineering Academic Integrity Policy, I cannot
+							publicly share code.<br> Please contact me for original source code regarding any U of M class project.
+						</p>
+					</div>
+				</footer>
+
       </body>
       </html>
