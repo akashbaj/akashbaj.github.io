@@ -30,13 +30,12 @@
 
 		<script type="text/javascript">
 			function myFunction() {
-					var x = document.getElementById("myInput")
-					x.select()
-					x.focus()
+					var x = document.getElementById("myInput").value
+					//x.select()
+					//x.focus()
 					if (x == "ImGoingToGiveAkashAJob") {
 						var y = document.getElementById("secretVid")
-					} else {
-						document.getElementById("secretVid").style.display = "";
+						y.style.display = "";
 					}
 			}
 		</script>
@@ -118,7 +117,7 @@
 						<section class="section has-background-light">
 							<div class="container">
 								<div class="center columns">
-									<div class="column">
+									<div class="is-flex column">
 										<article class="media notification is-light">
 											<figure class="media-content has-text-centered">
 													<p class="is-size-2">Heres one of my sets</p>
